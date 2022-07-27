@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="containr">
+        <div class="bosh">
+
+            
+            <div class="main">
+                
+                <div class="header">
+                    
+                    <h1>Ob-havo ma'lumotlari</h1>
+                    
+
+            </div>
+
+            
+            
+            <div class="input">
+                
+                <input type="text" placeholder="Shahar nomini kirting" class="input_text">
+                
+                <input type="submit" value="Submit" class="submit">
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        <div class="container">
+            
+            <div class="card">
+                
+                <h1 class="name" id="name"></h1>
+                
+                <p class="temp"></p>
+                
+                <p class="clouds"></p>
+                
+                <p class="desc"></p>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    </div>
+
+</div>
+<style>
+    * {
+
+        margin: 0;
+
+        padding: 0;
+
+        box-sizing: border-box;
+
+    }
+
+    .containr {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+
+
+
+    body {
+
+        font-family: "Nunito", sans-serif;
+
+        background-image: url('black.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1200px;
+
+    }
+
+    .main {
+        margin-top: 20px;
+    }
+
+    .header {
+        width: 500px;
+        height: 70px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background: #e7e7e7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+
+
+    }
+
+
+
+
+
+    .input {
+
+        text-align: center;
+
+        margin: 100px auto;
+
+    }
+
+
+
+
+    input[type="submit"] {
+
+        padding: 15px 30px;
+
+        background: #e7e7e7;
+
+        border: none;
+
+        border-radius: 10px;
+
+        font-family: "Nunito", sans-serif;
+
+        font-weight: bold;
+
+        font-size: 20px;
+
+    }
+
+
+
+
+    .input input[type="text"] {
+
+        width: 600px;
+
+        height: 55px;
+
+        padding: 5px 10px;
+
+        background: #e7e7e7;
+
+        border: none;
+
+        border-radius: 10px;
+
+        font-family: "Nunito", sans-serif;
+
+        font-weight: bold;
+
+        font-size: 20px;
+
+    }
+
+
+
+
+    .card {
+
+        width: 50%;
+
+        background: #e7e7e7;
+
+        height: 40vh;
+
+        margin: 50px auto;
+
+        border-radius: 2px;
+        border-radius: 15px;
+
+    }
+
+
+
+
+
+
+
+    .close {
+
+        float: right;
+
+        margin-top: -2px;
+
+        cursor: pointer;
+
+        margin-right: 20px;
+
+    }
+
+
+
+
+    .card h1 {
+
+        padding: 5px 0;
+
+        text-align: center;
+
+    }
+
+
+
+
+    .card p {
+
+        text-align: center;
+
+        margin: 40px 0;
+
+        font-size: 20px;
+
+    }
+
+    @media (max-width: 480px) {
+        .containr {
+            width: 480px;
+            height: auto;
+            margin: 0 auto;
+
+        }
+
+        .main {
+            max-width: 480px;
+        }
+
+        .header {
+            width: 320px;
+            font-size: 12px;
+        }
+
+        .input {
+            max-width: 300px;
+            display: flex;
+        }
+
+        .input_text {
+            max-width: 200px;
+            margin-right: 10px;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .card {
+            max-width: 400px;
+            font-size: 15px;
+        }
+
+
+
+
+    }
+
+    @media (max-width: 820px) {
+        .containr {
+            width: 820px;
+            height: auto;
+            margin: 0 auto;
+
+        }
+
+        .main {
+            max-width: 820px;
+        }
+        .header {
+                width: 720px;
+                font-size: 22px;
+            }
+
+            .input {
+                max-width: 740px;
+                display: flex;
+            }
+
+            .input_text {
+                max-width: 800px;
+                margin-right: 10px;
+            }
+
+            ::placeholder {
+                font-size: 25px;
+            }
+
+            .container {
+                max-width: 820px;
+                margin: 0 auto;
+            }
+
+            .card {
+                max-width: 400px;
+                font-size: 28px;
+            }
+        }
+    </style>
+</body>
+<script src="app.js"></script>
+
+</html>
